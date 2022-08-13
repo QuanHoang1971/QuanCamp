@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Questrial|Raleway:100,300,500,700"
+      rel="stylesheet"
+    />
+    <!-- All Styles -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Quan Camp</title>
+  </head>
+
+  <body>
+    <!--  -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a href="#" class="navbar-brand">
+        <h3 class="mb-0">Quan Camp</h3>
+      </a>
+      <button
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#mainNavbar"
+      >
+        <!-- để sử dụng đc collapse hiện ẩn menu quan trọng là phải có thuộc tính data-toggle và data-target. 1 set đi vs nhau rồi-->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--  -->
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <!-- id là j thì đẻ trên data-target nthe -->
+        <ul class="navbar-nav ml-auto">
+          <!-- để auto thì sẽ sát lề trái -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--  -->
+    <!--  /showcase -->
+
+    <section
+      id="showcase"
+      class="d-flex align-items-center justify-content-center"
+    >
+      <div id="overlay"></div>
+      <div id="header" class="container text-white text-center">
+        <h3 class="display-5 mb-0">Modern Camping</h3>
+        <h1 class="display-1">Quan Camp</h1>
+        <p class="lead d-none d-md-block">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga,
+          nostrum.
+        </p>
+        <button
+          id="book"
+          class="btn btn-primary btn-lg px-5 shadow-lg"
+          data-toggle="modal"
+          data-target="#bookNowModal"
+        >
+          BOOK NOW
+        </button>
+        <!-- chỗ này cũng phải đặt toggle , cứ chỗ nào có book now thì phải đặt  -->
+      </div>
+    </section>
+    <!-- /showcase -->
+
+    <!-- icon -->
+    <section>
+      <div class="container text-center mt-3">
+        <!-- căn chữ ra giữa -->
+        <h2>YOU SHOW UP, WE PITCH THE TENT</h2>
+        <div class="row">
+          <!-- icon 1 -->
+          <div class="col-md-4 p-3">
+            <img
+              src="./images/icons/tent.png"
+              alt=""
+              class="img-fluid d-none d-md-inline"
+            />
+            <!--  ở md thì d-none hide đi tất cả, chỉ để 1 hàng thôi  -->
+            <!-- fluid là full width theo container -->
+            <h3>Amenties Tou Want</h3>
+            <p class="lead">
+              What could be better than a day filled with exploring the woods,
+              an evening of good conversation surrounded by loved ones around a
+              campfire, and a night of sleeping in a tent beneath a pitch-black
+              sky filled with bright stars.
+            </p>
+            <!-- lead để đoạn văn nổi bật hơn -->
+          </div>
+
+          <!-- icon 2 -->
+          <div class="col-md-4 p-3">
+            <img src="./images/icons/nature.png" alt="" class="img-fluid" />
+            <!-- fluid là full width theo container -->
+            <h3>Amenties Tou Want</h3>
+            <p class="lead">
+              I just want to live in a world of mountains, coffee, campfires,
+              cabins, and golden trees, and run around with a camera and
+              notebook, learning the inner workings of everything real.
+            </p>
+            <!-- lead để đoạn văn nổi bật hơn -->
+          </div>
+
+          <!-- icon 3 -->
+          <div class="col-md-4 p-3">
+            <img src="./images/icons/campfire.png" alt="" class="img-fluid" />
+            <!-- fluid là full width theo container -->
+            <h3>Amenties Tou Want</h3>
+            <p class="lead">
+              You don’t have to say everything to be a light. Sometimes a fire
+              built on a hill will bring interested people to your campfire.
+            </p>
+            <!-- lead để đoạn văn nổi bật hơn -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- kiểm tra xem ở size từ large - small có sự thay đổi j về cột để responsive -->
+    <section>
+      <div class="container text-center mt-2 p-3">
+        <h3>We've Created A Hassle Free, Turn Key Camping Experience!</h3>
+        <div class="row">
+          <div class="col-md-6 p-3">
+            <div class="card">
+              <img src="./images/card/c-img1.jpg" alt="" />
+              <div class="card-body">
+                <h2 class="card-title text-primary">EXPERIENCE</h2>
+                <p class="card-text">
+                  Stare at the fire. Listen to the birds. Jump in the lake.
+                  Read. Take a nap. Relax. Watch the sunset. Cook over the fire.
+                  Our Campsite Where Friends And Marshmallows Get Toasted At The
+                  Same Time Breathe the fresh air
+                </p>
+                <a href="" class="btn btn-lg btn-outline-primary"
+                  >Go Somewhere</a
+                >
+                <!-- dòng lệnh trong bootstrap để có button to màu xanh -->
+              </div>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="col-md-6 p-3">
+            <div class="card">
+              <img src="./images/card/c-img2.jpg" alt="" />
+              <div class="card-body">
+                <h2 class="card-title text-primary">EXPERIENCE</h2>
+                <p class="card-text">
+                  I googled my symptoms turned out I just need to go
+                  camping.because therapy is expensive, Cooking and eating food
+                  outdoors makes it taste infinitely better than the same meal
+                  prepared and consumed indoors.
+                </p>
+                <a href="" class="btn btn-lg btn-outline-primary"
+                  >Go Somewhere</a
+                >
+                <!-- dòng lệnh trong bootstrap để có button to màu xanh -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Quotes -->
+    <section id="quotes" class="d-flex align-items-center">
+      <div class="container text-center">
+        <h2 class="mb-5">What Our Happy Campers Are Saying!</h2>
+
+        <!-- ROW  -->
+        <div class="row">
+          <div class="col-md-4 my-2">
+            <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+            <blockquote class="blockquote">
+              <p>
+                Fresh beauty opens one’s eyes wherever it is really seen but the
+                very abundance and completeness of the common beauty.
+              </p>
+              <footer class="blockquote-footer">Jack White</footer>
+            </blockquote>
+          </div>
+
+          <div class="col-md-4 my-2">
+            <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+
+            <!-- block cho đoạn code -->
+            <blockquote class="blockquote">
+              <p>
+                My wish is to stay always like this, living quietly in a corner
+                of nature.
+              </p>
+              <footer class="blockquote-footer">Josh Homme</footer>
+            </blockquote>
+          </div>
+
+          <div class="col-md-4 my-2">
+            <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+            <blockquote class="blockquote">
+              <p>Into the forest i go, to lose my mind and find my soul</p>
+              <footer class="blockquote-footer">Jesse Hughes</footer>
+            </blockquote>
+          </div>
+        </div>
+        <!-- /row -->
+
+        <!-- hastag -->
+        <div class="row mt-5 text-left">
+          <!-- chia tỉ lệ 7 phần slide -->
+          <div class="col-lg-7 mb-4">
+            <!-- công thức trong bootstrap -->
+            <div id="mainCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    class="d-block w-100"
+                    src="./images/slide/s-img2.jpg"
+                    alt="Coffee Photo"
+                  />
+                </div>
+                <!-- vì default của browser nên để class image nthe -->
+
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./images/slide/s-img3.jpg"
+                    alt="Fire Photo"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./images/slide/s-img4.jpg"
+                    alt="Trees Photo"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    class="d-block w-100"
+                    src="./images/slide/s-img1.jpg"
+                    alt="Caribou Photo"
+                  />
+                </div>
+              </div>
+
+              <!-- nút next prev lide -->
+              <a
+                href="#mainCarousel"
+                class="carousel-control-prev"
+                data-slide="prev"
+                role="button"
+              >
+                <span
+                  class="carousel-control-prev-icon fontIcon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                href="#mainCarousel"
+                class="carousel-control-next"
+                data-slide="next"
+                role="button"
+              >
+                <span
+                  class="carousel-control-next-icon fontIcon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <h3>Camping Made Cozy</h3>
+            <p class="lead">
+              It’s honestly pretty easy to make tent camping comfortable. All
+              you need is the right gear, a few comforts from home, and a level,
+              shaded campsite. Now, we want to hear from you. Do you have any
+              additional tips to make camping in a tent more comfortable?
+            </p>
+            <a class="btn btn-outline-primary btn-lg" href="#chatter"
+              >See For Yourself <i class="fa fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+        <!-- /row -->
+      </div>
+    </section>
+    <!-- /chatter -->
+
+    <!-- What others say -->
+    <section id="images" class="mt-5">
+      <!-- chia cột thì sau section luôn là container -->
+      <div class="container text-center">
+        <h2>What Others Are Saying</h2>
+        <h5 class="text-primary mb-5">#QUANCAMP</h5>
+
+        <div class="row">
+          <div class="col-6 col-lg-3 mb-4">
+            <!-- khi thu nhỏ thì sẽ chia thành 2 phần -> col-6 mỗi bên khi dàn hàng ngang row 
+            khi to ra thì sẽ là col-3 x4 =12unit -->
+            <img
+              class="img-fluid shadow"
+              src="./images/gallery/g-img1.jpg"
+              alt="Social Images"
+            />
+          </div>
+          <div class="col-6 col-lg-3 mb-4">
+            <img
+              class="img-fluid shadow"
+              src="./images/gallery/g-img7.jpg"
+              alt="Social Images"
+            />
+          </div>
+          <div class="col-6 col-lg-3 mb-4">
+            <img
+              class="img-fluid shadow"
+              src="./images/gallery/g-img3.jpg"
+              alt="Social Images"
+            />
+          </div>
+          <div class="col-6 col-lg-3 mb-4">
+            <img
+              class="img-fluid shadow"
+              src="./images/gallery/g-img5.jpg"
+              alt="Social Images"
+            />
+          </div>
+          <div class="col-6 col-lg-3 mb-4">
+            <img
+              class="img-fluid shadow"
+              src="./images/gallery/g-img6.jpg"
+              alt="Social Images"
+            />
+          </div>
+          <div class="col-6 col-lg-3 mb-4">
+            <img
+              class="img-fluid shadow"
+              src="./images/gallery/g-img2.jpg"
+              alt="Social Images"
+            />
+          </div>
+          <div class="col-6 col-lg-3 mb-4">
+            <img
+              class="img-fluid shadow"
+              src="./images/gallery/g-img8.jpg"
+              alt="Social Images"
+            />
+          </div>
+          <div class="col-6 col-lg-3 mb-4">
+            <img
+              class="img-fluid shadow"
+              src="./images/gallery/g-img4.jpg"
+              alt="Social Images"
+            />
+          </div>
+        </div>
+
+        <!-- quotes -->
+        <div class="row my-5">
+          <!-- dịch xuốn theo trục y -->
+          <div class="col">
+            <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+            <blockquote class="blockquote">
+              <p class="mb-2">
+                There's a destination,a little up the road. From the habitations
+                and the towns we know. A place we saw the lights turn low. The
+                jig-saw jazz and the get-fresh flow.
+              </p>
+              <footer class="blockquote-footer">Beck Hansen</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /images -->
+
+    <section id="newsletter" class="py-5 bg-dark">
+      <div class="container text-center">
+        <h4 class="text-white">
+          Join Our Newsletter for Deals, Updates and Offers
+        </h4>
+
+        <div class="row mt-3">
+          <div class="col-10 col-sm-8 col-md-6 col-lg-4 mx-auto">
+            <form>
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="news"
+                  id="news"
+                  placeholder="Your Email"
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-primary">Join Now</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /newsletter -->
+
+    <!-- /footer -->
+    <footer id="footer" class="py-4 bg-secondary">
+      <ul class="nav text-center justify-content-center">
+        <li class="nav-item">
+          <a href="#footer" class="nav-link text-white">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a href="#footer" class="nav-link text-white">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a href="#explore" class="nav-link text-white">Explore</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link text-white">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a
+            href="#"
+            class="nav-link text-white"
+            data-toggle="modal"
+            data-target="#bookNowModal"
+            >Book Now</a
+          >
+          <!-- muốn hiện lên New Booking khi click vào Book Now thì phải đặt data-toggle và data-target -->
+        </li>
+      </ul>
+    </footer>
+    <!-- /footer -->
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookNowModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">New Booking</h5>
+
+            <!-- tạo button close bên trong New Booking -->
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <!-- phải để data-dismiss thì mới ấn đc nút close đóng lại -->
+          </div>
+
+          <div class="modal-body">
+            <p>
+              Please fill out the new booking form and we will get back to you
+              as soon as possible ya dingus! Jeez!
+            </p>
+            <!-- tạo form modal rồi tạo form-group riêng từng cái -->
+            <form>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  class="form-control"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="hoangquan@checkitout.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="numAdults">Number of Adults</label>
+                <select class="form-control" name="numAdults" id="numAdults">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="numchildren">Number of Children</label>
+                <select
+                  class="form-control"
+                  name="numChildren"
+                  id="numChildren"
+                >
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="requests">Additional Requests</label>
+                <textarea
+                  class="form-control"
+                  name="requests"
+                  id="requests"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div class="d-flex justify-content-end mt-4">
+                <button class="btn btn-primary mr-2">Submit Request</button>
+                <button class="btn btn-secondary" data-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /booking modal -->
+    <!--  -->
+    <!--  -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
